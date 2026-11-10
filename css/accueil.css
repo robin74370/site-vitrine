@@ -1,0 +1,72 @@
+/* ACCUEIL */
+.home { height: 100vh; height: 100dvh; overflow: hidden; }
+.composition {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: var(--frieze-size) 25vw minmax(0, 1fr);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tile { background: var(--ink); }
+.tile-1 { grid-area: 2 / 3; }
+.tile-2 { grid-area: 3 / 1; background: var(--paper); }
+.tile-3 { grid-area: 3 / 2; }
+.tile-4 { grid-area: 3 / 3; background: var(--paper); }
+.tile-5 { grid-area: 3 / 4; }
+/* Le premier carré noir remplace l'ancien bloc .brand. */
+.composition::before { content: ''; grid-area: 2 / 1; background: var(--ink); }
+.navigation { display: contents; }
+.nav-link {
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  height: max-content;
+  font-size: clamp(20px, 2.4vw, 50px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.055em;
+  white-space: nowrap;
+  transition: opacity var(--ease);
+}
+.nav-link:hover, .bottom-contact:hover { opacity: .65; }
+.nav-bureau {
+  margin-top: 7px;
+  grid-area: 3 / 1;
+  justify-self: end;
+  align-self: start;
+  transform: rotate(-90deg) translateY(-100%);
+  transform-origin: top right;
+}
+
+.nav-projets {
+  margin-top: 4px;
+  grid-area: 3 / 3;
+  justify-self: start;
+  align-self: start;
+  transform: translate(2px, -3px);
+}
+/* Compatibilité avec l'ancien HTML : flèches masquées par défaut. */
+.nav-link:hover .nav-arrow, .nav-link:focus-visible .nav-arrow { opacity: 1; }
+
+/* BANDE INFÉRIEURE DE L'ACCUEIL */
+.bottom-band {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  height: var(--frieze-size);
+}
+.bottom-tile:nth-child(1), .bottom-tile:nth-child(3) { background: var(--ink); }
+.bottom-tile:nth-child(2), .bottom-contact { background: var(--paper); }
+.bottom-contact {
+  padding-left: 3px;
+  font-size: clamp(20px, 2.4vw, 50px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.055em;
+  white-space: nowrap;
+  transition: opacity var(--ease);
+}

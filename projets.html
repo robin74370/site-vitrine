@@ -5,54 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets — Atelier Catherine Boidevaix</title>
+  <script src="js/main.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projets.css">
 </head>
 
 <body class="projects-page">
 
-  <header class="projects-header">
-    <div class="top-pattern" aria-hidden="true">
-      <span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span>
-    </div>
+<header class="projects-header">
+  <div class="top-pattern" aria-label="Navigation vers l'accueil">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
 
-    <a href="index.html" class="projects-logo">
-      <span class="projects-logo-square"></span>
-      <span>atelier</span>
-      <strong>CATHERINE</strong>
-      <strong>BOIDEVAIX</strong>
-      <span>ARCHITECTE</span>
+    <a href="index.html" class="top-pattern-logo"
+      aria-label="Retour à l'accueil">
+      <img src="assets/logo-acb.svg" alt="Atelier Catherine Boidevaix">
     </a>
-  </header>
+  </div>
+</header>
 
-  <main class="projects-main">
+<main class="projects-main">
+
+  <!-- Colonne gauche -->
+  <aside class="projects-sidebar">
     <h1 class="projects-title">Projets</h1>
 
-    <section class="projects-grid">
+    <span class="projects-dot" aria-hidden="true"></span>
 
-    <a href="projet.html?id=charvonnex74"
-        class="project-card">
-        <div class="project-image">
-            <img src="assets/projets/charvonnex74/exterieur1.jpg" alt="Projet Charvonnex">
-        </div>
-        <h2>Charvonnex, 2026.</h2>
+    <nav class="projects-sidebar-nav" aria-label="Navigation secondaire">
+      <a href="bureau.html">Bureau</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Grille des projets -->
+  <section class="projects-grid" aria-label="Réalisations">
+
+    <a href="projet.html?id=charvonnex74" class="project-card">
+      <div class="project-image">
+        <img src="assets/projets/charvonnex74/exterieur1.jpg"
+             alt="Projet Charvonnex">
+      </div>
+      <h2>Charvonnex, 2026.</h2>
     </a>
+
     <a href="projet.html?id=sdis74" class="project-card">
-        <div class="project-image">
-            <img src="assets/projets/sdis74/exterieur1.jpg" alt="Centre de Secours du Pays Rochois">
-        </div>
-        <h2>Éteaux, 2020.</h2>
+      <div class="project-image">
+        <img src="assets/projets/sdis74/exterieur1.jpg"
+             alt="Centre de Secours du Pays Rochois">
+      </div>
+      <h2>Éteaux, 2020.</h2>
     </a>
-        <a href="projet.html?id=vulbens74" class="project-card">
-        <div class="project-image">
-            <img src="assets/projets/vulbens74/exterieur1.jpg" alt="Groupe scolaire de Vulbens">
-        </div>
-        <h2>Vulbens, 2012.</h2>
+
+    <a href="projet.html?id=vulbens74" class="project-card">
+      <div class="project-image">
+        <img src="assets/projets/vulbens74/exterieur1.jpg"
+             alt="Groupe scolaire de Vulbens">
+      </div>
+      <h2>Vulbens, 2012.</h2>
     </a>
-    </section>
-  </main>
+
+  </section>
+
+</main>
 
 </body>
 </html>

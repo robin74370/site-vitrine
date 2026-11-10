@@ -5,46 +5,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet — Atelier Catherine Boidevaix</title>
+  <script src="js/main.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projet.css">
+
   <script src="js/projet.js" defer></script>
 </head>
 
 <body class="projects-page">
 
   <header class="projects-header">
-    <div class="top-pattern" aria-hidden="true">
+    <div class="top-pattern" aria-label="Navigation vers l'accueil">
       <span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span>
-    </div>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span>
 
-    <a href="index.html" class="projects-logo">
-      <span class="projects-logo-square"></span>
-      <span>atelier</span>
-      <strong>CATHERINE</strong>
-      <strong>BOIDEVAIX</strong>
-      <span>ARCHITECTE</span>
-    </a>
+      <a href="index.html" class="top-pattern-logo"
+        aria-label="Retour à l'accueil">
+        <img src="assets/logo-acb.svg" alt="Atelier Catherine Boidevaix">
+      </a>
+    </div>
   </header>
 
 
 <main class="project-detail">
 
-  <a href="projets.html" class="project-back">
-    &lt;
-  </a>
-
   <div class="project-layout">
 
-    <div class="project-info">
-      <h1 id="project-title"></h1>
-      <p id="project-date"></p>
+    <!-- Colonne gauche -->
+    <section class="project-info">
 
-      <div id="project-description" class="project-description"></div>
-    </div>
+      <a href="projets.html" class="project-back" aria-label="Retour aux projets">
+        &lt;
+      </a>
 
-    <div id="project-gallery" class="project-gallery"></div>
+      <div class="project-text-scroll">
+        <h1 id="project-title"></h1>
+        <p id="project-date"></p>
+        <div id="project-description" class="project-description"></div>
+      </div>
+
+      <nav class="project-bottom-nav">
+        <a href="bureau.html">Bureau</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </section>
+
+    <!-- Colonne droite -->
+    <section class="project-visual">
+
+      <div id="project-gallery" class="project-gallery"></div>
+
+      <div class="project-gallery-footer">
+        <span id="project-caption">Légende</span>
+
+        <div class="project-gallery-counter">
+          <span id="project-current">1</span>
+          <span id="project-total">1</span>
+        </div>
+      </div>
+
+    </section>
 
   </div>
 

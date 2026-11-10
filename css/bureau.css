@@ -1,0 +1,161 @@
+/* ========================================
+   PAGE BUREAU
+======================================== */
+
+.bureau-page {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* STRUCTURE GÉNÉRALE */
+
+.bureau-main {
+  display: flex;
+  flex-direction: column;
+
+  height: calc(100dvh - var(--frieze-size));
+  padding: 3.125vw;
+
+  overflow: hidden;
+}
+
+/* TITRE */
+
+.bureau-title {
+  flex-shrink: 0;
+
+  margin-bottom: 30px;
+
+  font-size: clamp(30px, 2.5vw, 45px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  color: #00ff00;
+}
+
+/* TROIS COLONNES IDENTIQUES */
+
+.bureau-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: 4vw;
+
+  flex: 1;
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+/* CHAQUE COLONNE DÉFILE INDÉPENDAMMENT */
+
+.bureau-column {
+  min-width: 0;
+  min-height: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.bureau-column::-webkit-scrollbar {
+  display: none;
+}
+
+/* TYPOGRAPHIE */
+
+.bureau-column h2 {
+  margin-bottom: 22px;
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+}
+
+.bureau-section {
+  margin-bottom: 22px;
+}
+
+.bureau-section h3,
+.bureau-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+}
+
+.bureau-section h3 {
+  margin-bottom: 2px;
+}
+
+.bureau-section a {
+  overflow-wrap: anywhere;
+}
+
+.bureau-section a:hover {
+  opacity: 0.6;
+}
+
+/* NAVIGATION TOUJOURS VISIBLE EN BAS */
+
+.bureau-bottom-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex-shrink: 0;
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.bureau-bottom-nav a {
+  width: max-content;
+
+  font-size: clamp(28px, 2.5vw, 45px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+
+  transition: opacity var(--ease);
+}
+
+.bureau-bottom-nav a:hover {
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .bureau-page {
+    height: auto;
+    overflow: auto;
+  }
+
+  .bureau-main {
+    height: auto;
+    min-height: calc(100dvh - var(--frieze-size));
+    padding: 30px 15px;
+    overflow: visible;
+  }
+
+  .bureau-columns {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    overflow: visible;
+  }
+
+  .bureau-column {
+    overflow: visible;
+  }
+
+  .bureau-bottom-nav {
+    margin-top: 50px;
+  }
+}

@@ -42,3 +42,21 @@ function adjustLogoSpacing() {
 document.fonts.ready.then(adjustLogoSpacing);
 
 window.addEventListener("resize", adjustLogoSpacing);
+
+// CURSEUR VERT PERSONNALISÉ
+
+if (window.matchMedia("(pointer: fine)").matches) {
+  const cursor = document.createElement("div");
+  cursor.className = "custom-cursor";
+  document.body.appendChild(cursor);
+
+  document.addEventListener("pointermove", (event) => {
+    cursor.style.left = `${event.clientX}px`;
+    cursor.style.top = `${event.clientY}px`;
+    cursor.style.visibility = "visible";
+  });
+
+  document.addEventListener("pointerleave", () => {
+    cursor.style.visibility = "hidden";
+  });
+}

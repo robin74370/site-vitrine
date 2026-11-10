@@ -1,0 +1,163 @@
+/* =========================
+   PAGE PROJETS
+========================= */
+
+.projects-page {
+  --green: #00ff00;
+}
+
+/* HEADER */
+
+.projects-header {
+  height: var(--frieze-size);
+}
+
+/* STRUCTURE */
+
+.projects-main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+
+  width: 100%;
+  min-height: calc(100vh - var(--frieze-size));
+
+  padding: 3.125vw 3.125vw 30px;
+}
+
+/* COLONNE GAUCHE */
+
+.projects-sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.projects-title {
+  margin: 0;
+
+  font-size: clamp(30px, 2.5vw, 45px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  color: var(--green);
+}
+
+/* NAVIGATION EN BAS */
+
+.projects-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+  margin-top: auto;
+}
+
+.projects-sidebar-nav a {
+  width: max-content;
+
+  font-size: clamp(24px, 2.5vw, 45px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+
+  transition: opacity var(--ease);
+}
+
+.projects-sidebar-nav a:hover {
+  opacity: 0.6;
+}
+
+/* GRILLE PHOTOS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: 3.5%;
+  row-gap: 30px;
+
+  align-content: start;
+}
+
+/* CARTES */
+
+.project-card {
+  display: block;
+  min-width: 0;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #eee;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 500ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card h2 {
+  margin-top: 3px;
+
+  font-size: clamp(12px, 0.95vw, 17px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .projects-main {
+    grid-template-columns: 30% 70%;
+    padding: 30px 3%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 15px;
+  }
+
+  .projects-sidebar {
+    min-height: 0;
+    gap: 20px;
+  }
+
+  .projects-sidebar-nav {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+.projects-grid {
+  display: grid;
+}
