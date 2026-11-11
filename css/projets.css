@@ -4,6 +4,8 @@
 
 .projects-page {
   --green: #00ff00;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -20,9 +22,11 @@
   column-gap: var(--frieze-size);
 
   width: 100%;
-  min-height: calc(100dvh - var(--frieze-size));
+  height: calc(100dvh - var(--frieze-size));
+  min-height: 0;
 
   padding: var(--page-margin-x);
+  overflow: hidden;
 }
 
 /* COLONNE GAUCHE */
@@ -31,7 +35,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+
+  height: 100%;
+  min-height: 0;
 }
 
 .projects-title {
@@ -81,6 +87,18 @@
   row-gap: var(--frieze-size);
 
   align-content: start;
+
+  height: 100%;
+  min-height: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+}
+
+.projects-grid::-webkit-scrollbar {
+  display: none;
 }
 
 /* CARTES */
@@ -159,6 +177,3 @@
   }
 }
 
-.projects-grid {
-  display: grid;
-}
