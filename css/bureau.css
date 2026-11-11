@@ -15,7 +15,8 @@
   flex-direction: column;
 
   height: calc(100dvh - var(--frieze-size));
-  padding: 3.125vw;
+  margin: var(--page-margin-x);
+  margin-top: var(--page-margin-top);
 
   overflow: hidden;
 }
@@ -25,7 +26,7 @@
 .bureau-title {
   flex-shrink: 0;
 
-  margin-bottom: 30px;
+  margin-bottom: var(--page-margin-bottom);
 
   font-size: clamp(30px, 2.5vw, 45px);
   font-weight: 400;
@@ -110,9 +111,8 @@
   align-items: flex-start;
 
   flex-shrink: 0;
-  gap: 14px;
-
-  margin-top: 30px;
+  gap: var(--nav-gap);
+  margin-bottom: var(--page-margin-bottom);
 }
 
 .bureau-bottom-nav a {

@@ -1,4 +1,13 @@
 /* ATELIER CATHERINE BOIDEVAIX — STYLE GLOBAL */
+
+@font-face {
+  font-family: "Neue Haas Grotesk Light";
+  src: url("../fonts/NeueHaasGrotDisp-45Light-Trial.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Neue Haas Grotesk";
   src: url("../fonts/NeueHaasGrotText-55Roman-Trial.otf") format("opentype");
@@ -18,8 +27,17 @@
 :root {
   --ink: #000;
   --paper: #fff;
-  --frieze-size: 3.125vw; /* 100vw / 32 */
+  --frieze-size: 3.125vw;
   --ease: 350ms cubic-bezier(.22, 1, .36, 1);
+
+  /* MARGES COMMUNES */
+  --page-margin-x: 3.125vw;
+  --page-margin-top: 96px;
+  --page-margin-bottom: 96px;
+
+  /* ESPACEMENTS */
+  --title-margin-bottom: 30px;
+  --nav-gap: 14px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -82,4 +100,17 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
     transform: translate(-50%, -50%);
     visibility: hidden;
   }
+}
+
+/* TEXTES DESCRIPTIFS ET LÉGENDES */
+
+.project-description,
+#project-date,
+.project-gallery-footer,
+.project-card h2,
+.bureau-section,
+.contact-column p,
+.contact-column address {
+  font-family: "Neue Haas Grotesk Light", Arial, sans-serif;
+  font-weight: 300;
 }

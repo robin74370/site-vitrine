@@ -16,12 +16,13 @@
 
 .projects-main {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: calc(6 * var(--frieze-size)) minmax(0, 1fr);
+  column-gap: var(--frieze-size);
 
   width: 100%;
-  min-height: calc(100vh - var(--frieze-size));
+  min-height: calc(100dvh - var(--frieze-size));
 
-  padding: 3.125vw 3.125vw 30px;
+  padding: var(--page-margin-x);
 }
 
 /* COLONNE GAUCHE */
@@ -51,7 +52,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  gap: 12px;
+  gap: var(--nav-gap);
   margin-top: auto;
 }
 
@@ -74,10 +75,10 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, calc(7 * var(--frieze-size)));
 
-  column-gap: 3.5%;
-  row-gap: 30px;
+  column-gap: var(--frieze-size);
+  row-gap: var(--frieze-size);
 
   align-content: start;
 }
