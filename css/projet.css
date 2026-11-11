@@ -63,6 +63,8 @@ body.projects-page:has(.project-detail) {
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
+
+  margin-bottom: 50px;
 }
 
 #project-title {
