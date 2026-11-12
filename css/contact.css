@@ -138,3 +138,21 @@
     padding-top: 50px;
   }
 }
+
+.legal-link {
+  position: fixed;
+  right: var(--page-margin-x);
+  bottom: var(--page-margin-x);
+
+  font-family: "Neue Haas Grotesk Light", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+
+  color: #000;
+}
+
+.legal-link:hover {
+  color: #00ff00;
+  opacity: 1;
+}

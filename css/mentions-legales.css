@@ -1,0 +1,138 @@
+
+/* =========================
+   PAGE MENTIONS LÉGALES
+========================= */
+
+body.legal-page {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* STRUCTURE FIXE */
+
+.legal-main {
+  display: flex;
+  flex-direction: column;
+
+  height: calc(100dvh - var(--frieze-size));
+  margin-top: var(--frieze-size);
+
+  padding: 50px var(--page-margin-x) 30px;
+  min-height: 0;
+}
+
+/* TITRE FIXE */
+
+.legal-main h1 {
+  flex-shrink: 0;
+  margin-bottom: 35px;
+
+  font-size: clamp(30px, 2.5vw, 45px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #00ff00;
+}
+/* CONTENU SCROLLABLE SUR 3 COLONNES */
+
+.legal-content {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--frieze-size);
+  row-gap: 60px;
+  align-content: start;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.legal-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* SECTIONS */
+
+.legal-content section {
+  margin: 0;
+  min-width: 0;
+  max-width: 370px;
+}
+
+.legal-content h2 {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.legal-content p {
+  margin-bottom: 15px;
+
+  font-family: "Neue Haas Grotesk Light", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.legal-content a {
+  text-decoration: underline;
+}
+
+/* BOUTON RETOUR FIXE EN BAS */
+
+.legal-back {
+  flex-shrink: 0;
+  align-self: flex-start;
+
+  margin-top: 25px;
+
+  font-size: clamp(28px, 2.5vw, 45px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+
+  transition: color var(--ease);
+}
+
+.legal-back:hover {
+  color: #00ff00;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .legal-main {
+    padding: 35px 15px 20px;
+  }
+
+  .legal-main h1 {
+    margin-bottom: 25px;
+  }
+
+  .legal-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .legal-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .legal-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
