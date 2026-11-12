@@ -100,7 +100,8 @@
 }
 
 .bureau-section a:hover {
-  opacity: 0.6;
+  opacity: 1;
+  color: #00ff00;
 }
 
 /* NAVIGATION TOUJOURS VISIBLE EN BAS */
@@ -127,7 +128,8 @@
 }
 
 .bureau-bottom-nav a:hover {
-  opacity: 0.6;
+  opacity: 1;
+  color: #00ff00;
 }
 
 /* RESPONSIVE */

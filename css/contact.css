@@ -80,7 +80,8 @@
 }
 
 .contact-column a:hover {
-  opacity: 0.6;
+  opacity: 1;
+  color: #00ff00;
 }
 
 /* NAVIGATION EN BAS */
@@ -107,7 +108,8 @@
 }
 
 .contact-bottom-nav a:hover {
-  opacity: 0.6;
+  opacity: 1;
+  color: #00ff00;
 }
 
 /* RESPONSIVE */
