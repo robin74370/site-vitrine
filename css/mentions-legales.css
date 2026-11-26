@@ -92,7 +92,7 @@ body.legal-page {
 
   margin-top: 25px;
 
-  font-size: clamp(28px, 2.5vw, 45px);
+  font-size: var(--nav-font-size);
   font-weight: 400;
   line-height: 1.1;
 
