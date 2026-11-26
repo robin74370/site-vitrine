@@ -143,8 +143,15 @@
   .bureau-main {
     height: auto;
     min-height: calc(100dvh - var(--frieze-size));
-    padding: 30px 15px;
+
+    margin: 0;
+    padding: 60px 25px 25px;
+
     overflow: visible;
+  }
+
+  .bureau-title {
+    margin-bottom: 35px;
   }
 
   .bureau-columns {
@@ -158,6 +165,8 @@
   }
 
   .bureau-bottom-nav {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    gap: 12px;
   }
 }

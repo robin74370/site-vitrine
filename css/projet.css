@@ -218,6 +218,7 @@ body.projects-page:has(.project-detail) {
 /* RESPONSIVE */
 
 @media (max-width: 800px) {
+
   body.projects-page:has(.project-detail) {
     height: auto;
     overflow: auto;
@@ -225,31 +226,125 @@ body.projects-page:has(.project-detail) {
 
   .project-detail {
     height: auto;
+    min-height: calc(100dvh - var(--frieze-size));
+
+    margin: 0;
+    padding: 60px 25px 25px;
+
     overflow: visible;
-    padding: 30px 15px;
   }
 
   .project-layout {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+
     height: auto;
-    gap: 35px;
+    gap: 0;
   }
 
   .project-info {
-    padding-right: 0;
+    display: contents;
   }
+
+  /* FLÈCHE RETOUR */
+
+.project-back {
+  order: 0;
+  align-self: stretch;
+
+  position: sticky;
+  top: var(--frieze-size);
+  z-index: 100;
+
+  background: var(--paper);
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+  /* TEXTE INTÉGRALEMENT VISIBLE */
 
   .project-text-scroll {
+    order: 1;
+
     flex: none;
-    max-height: 45vh;
+    height: auto;
+    max-height: none;
+
+    margin-bottom: 35px;
+
+    overflow: visible;
   }
 
-  .project-bottom-nav {
-    margin-top: 30px;
+  .project-description {
+    max-width: none;
+  }
+
+  /* GALERIE PHOTOS */
+
+  .project-visual {
+    order: 2;
+
+    width: 100%;
+    height: auto;
   }
 
   .project-gallery {
     flex: none;
-    height: 65vh;
+
+    width: 100%;
+    height: auto;
+    max-height: none;
+
+    gap: 20px;
+    overflow: visible;
+  }
+
+  /* PHOTOS ET LÉGENDES */
+
+  .project-figure {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .project-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 100%;
+    max-width: none;
+    gap: 5px;
+  }
+
+  .project-figure img {
+    order: 0;
+    display: block;
+
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .project-figure figcaption {
+    order: 1;
+    flex-basis: auto;
+    width: auto;
+    font-size: 14px;
+  }
+
+  /* NAVIGATION EN BAS DE PAGE */
+
+  .project-bottom-nav {
+    order: 3;
+
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    gap: 12px;
+  }
+
+  .project-bottom-nav a {
+    font-size: 28px;
   }
 }

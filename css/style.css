@@ -114,3 +114,44 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
   font-family: "Neue Haas Grotesk Light", Arial, sans-serif;
   font-weight: 300;
 }
+
+@media (max-width: 600px) {
+  :root {
+    --frieze-size: 6.25vw;
+  }
+
+  .top-pattern {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+  }
+
+  .top-pattern > span:nth-child(n+17) {
+    display: none;
+  }
+
+  .top-pattern:has(.top-pattern-logo) > span:nth-child(16) {
+    display: none;
+  }
+
+  .top-pattern-logo {
+    grid-column: 16;
+  }
+}
+
+/* TITRES FIXES SUR MOBILE */
+
+@media (max-width: 800px) {
+
+  .bureau-title,
+  .contact-title,
+  .projects-title,
+  .legal-main h1 {
+    position: sticky;
+    top: var(--frieze-size);
+    z-index: 100;
+
+    background: var(--paper);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+}
