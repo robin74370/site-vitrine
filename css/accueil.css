@@ -157,4 +157,9 @@
   .nav-bureau:hover .bureau-arrow {
     color: #00ff00;
   }
+
+  .nav-link,
+.bottom-contact {
+  font-weight: 600;
+}
 }
