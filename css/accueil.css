@@ -41,7 +41,7 @@
 }
 
 .nav-bureau {
-  margin-top: 7px;
+  margin-top: 3px;
   grid-area: 3 / 1;
   justify-self: end;
   align-self: start;
@@ -51,7 +51,7 @@
 
 .nav-bureau .bureau-arrow {
   position: absolute;
-  left: calc(100% + 12px);
+  left: calc(100% + 6px);
   top: 0;
   color: #ffffff;
 }
@@ -62,7 +62,7 @@
 }
 
 .nav-projets {
-  margin-top: 4px;
+  margin-top: 3px;
   grid-area: 3 / 3;
   justify-self: start;
   align-self: start;
@@ -83,8 +83,8 @@
 .bottom-tile:nth-child(1), .bottom-tile:nth-child(3) { background: var(--ink); }
 .bottom-tile:nth-child(2), .bottom-contact { background: var(--paper); }
 .bottom-contact {
-  padding-left: 3px;
-  padding-top: 3px;
+  padding-left: 2px;
+  padding-top: 0px;
   font-size: clamp(20px, 2.4vw, 50px);
   font-weight: 400;
   line-height: 1;
