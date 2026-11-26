@@ -30,7 +30,6 @@ body.legal-page {
 
   font-size: clamp(30px, 2.5vw, 45px);
   font-weight: 400;
-  letter-spacing: -0.05em;
   color: #00ff00;
 }
 /* CONTENU SCROLLABLE SUR 3 COLONNES */
@@ -76,11 +75,9 @@ body.legal-page {
 .legal-content p {
   margin-bottom: 15px;
 
-  font-family: "Neue Haas Grotesk Light", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.04em;
 }
 
 .legal-content a {
@@ -98,7 +95,6 @@ body.legal-page {
   font-size: clamp(28px, 2.5vw, 45px);
   font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -0.05em;
 
   transition: color var(--ease);
 }

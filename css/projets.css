@@ -46,7 +46,6 @@
   font-size: clamp(30px, 2.5vw, 45px);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.05em;
 
   color: var(--green);
 }
@@ -68,7 +67,6 @@
   font-size: clamp(24px, 2.5vw, 45px);
   font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -0.05em;
 
   transition: opacity var(--ease);
 }
@@ -146,7 +144,6 @@
   font-size: clamp(12px, 0.95vw, 17px);
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0.04em;
 }
 
 /* RESPONSIVE TABLETTE */
