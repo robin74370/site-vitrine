@@ -85,7 +85,7 @@
   grid-template-columns: repeat(3, calc(7 * var(--frieze-size)));
 
   column-gap: var(--frieze-size);
-  row-gap: var(--frieze-size);
+  row-gap: calc(var(--frieze-size) - 24px);
 
   align-content: start;
 
@@ -107,6 +107,16 @@
 .project-card {
   display: block;
   min-width: 0;
+}
+
+.project-card h2 {
+  margin: 0;
+  padding-top: 4px;
+  height: 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .project-image {

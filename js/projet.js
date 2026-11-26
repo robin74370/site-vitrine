@@ -2,44 +2,84 @@
 const params = new URLSearchParams(window.location.search);
 const projectId = params.get("id");
 
+
+// varier manuellement la largeur  entre 60% - 85% pour un bon rendu
 const projects = {
     charvonnex74: {
       json: "charvonnex.json",
       images: [
-        { file: "exterieur1.jpg", width: "100%", caption: "Vue extérieure 1" },
-        { file: "exterieur2.jpg", width: "85%", caption: "Vue extérieure 2" },
-        { file: "exterieur3.jpg", width: "95%", caption: "Vue extérieure 3" },
+        { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "60%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "70%", caption: "Vue extérieure 3" },
         { file: "interieur1.jpg", width: "75%", caption: "Vue intérieure 1" },
-        { file: "interieur2.jpg", width: "100%", caption: "Vue intérieure 2" },
-        { file: "interieur3.jpg", width: "90%", caption: "Vue intérieure 3" },
+        { file: "interieur2.jpg", width: "85%", caption: "Vue intérieure 2" },
+        { file: "interieur3.jpg", width: "70%", caption: "Vue intérieure 3" },
         { file: "interieur4.jpg", width: "80%", caption: "Vue intérieure 4" },
-        { file: "interieur5.jpg", width: "100%", caption: "Vue intérieure 5" }
+        { file: "interieur5.jpg", width: "85%", caption: "Vue intérieure 5" }
       ]
     },
     sdis74: {
       json: "sdis.json",
       images: [
-        { file: "exterieur1.jpg", width: "100%", caption: "Vue extérieure 1" },
+        { file: "exterieur1.jpg", width: "80%", caption: "Vue extérieure 1" },
         { file: "exterieur2.jpg", width: "85%", caption: "Vue extérieure 2" },
-        { file: "exterieur3.jpg", width: "95%", caption: "Vue extérieure 3" },
+        { file: "exterieur3.jpg", width: "65%", caption: "Vue extérieure 3" },
         { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
-        { file: "exterieur5.jpg", width: "100%", caption: "Vue extérieure 5" },
-        { file: "interieur1.jpg", width: "90%", caption: "Vue intérieure 1" },
+        { file: "exterieur5.jpg", width: "65%", caption: "Vue extérieure 5" },
+        { file: "interieur1.jpg", width: "70%", caption: "Vue intérieure 1" },
         { file: "interieur2.jpg", width: "80%", caption: "Vue intérieure 2" }
       ]
     },
     vulbens74: {
       json: "vulbens.json",
       images: [
-        { file: "exterieur1.jpg", width: "100%", caption: "Vue extérieure 1" },
+        { file: "exterieur1.jpg", width: "70%", caption: "Vue extérieure 1" },
         { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
-        { file: "exterieur3.jpg", width: "95%", caption: "Vue extérieure 3" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
         { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
-        { file: "exterieur5.jpg", width: "90%", caption: "Vue extérieure 5" },
-        { file: "exterieur6.jpg", width: "100%", caption: "Vue extérieure 6" }
+        { file: "exterieur5.jpg", width: "65%", caption: "Vue extérieure 5" },
+        { file: "exterieur6.jpg", width: "80%", caption: "Vue extérieure 6" }
+      ]
+    },
+    allonzier74: {
+      json: "allonzier.json",
+      images: [
+        { file: "exterieur1.jpg", width: "70%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "exterieur5.jpg", width: "65%", caption: "Vue extérieure 5" },
+        { file: "interieur1.jpg", width: "80%", caption: "Vue interieur 1" },
+        { file: "interieur2.jpg", width: "75%", caption: "Vue interieur 2" },
+        // { file: "plan-masse.svg", width: "85%", caption: "Plan masse" },
+        // { file: "plan-rdc.svg", width: "85%", caption: "Plan du rez-de-chaussée" }
+      ]
+    },
+    marquisats74: {
+      json: "marquisats.json",
+      images: [
+        { file: "apres1.jpg", width: "70%", caption: "Vue extérieure 1" },
+        { file: "apres2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "apres3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "apres4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "avant1.jpg", width: "65%", caption: "Avant 1" },
+        { file: "avant2.jpg", width: "80%", caption: "Avant 2" },
+        { file: "pendant1.jpg", width: "75%", caption: "Travaux" },
+      ]
+    },
+    annecy74: {
+      json: "annecy.json",
+      images: [
+        { file: "exterieur1.jpg", width: "70%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "interieur1.jpg", width: "65%", caption: "Vue interieur 1" },
+        { file: "interieur2.jpg", width: "80%", caption: "Vue interieur 2" },
+        { file: "interieur3.jpg", width: "855%", caption: "Vue interieur 3" },
+        { file: "avant1.jpg", width: "75%", caption: "Travaux" },
       ]
     }
-
 };
 
 async function loadProject() {
