@@ -111,6 +111,7 @@
   width: 50%;
   height: auto;
   object-fit: contain;
+  margin-right: 3px;
 }
 
 @media (max-width: 600px) {
