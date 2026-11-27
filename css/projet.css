@@ -361,3 +361,13 @@ body.projects-page:has(.project-detail) {
     font-size: 28px;
   }
 }
+
+.project-back {
+  transition: transform var(--ease), color var(--ease);
+}
+
+@media (hover: hover) {
+  .project-back:hover {
+    transform: translateX(-2px);
+  }
+}

@@ -160,3 +160,25 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
     padding: 0;
   }
 }
+
+.nav-chevron {
+  display: inline-block;
+  transition: transform var(--ease);
+  margin-left: 3px;
+}
+
+@media (hover: hover) {
+  a:hover .nav-chevron {
+    transform: translateX(6px);
+  }
+}
+
+.bureau-arrow {
+  transition: translate var(--ease), color var(--ease);
+}
+
+@media (hover: hover) {
+  .nav-bureau:hover .bureau-arrow {
+    translate: 6px 0;
+  }
+}

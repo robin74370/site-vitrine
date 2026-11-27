@@ -154,3 +154,14 @@ body.legal-page {
     margin-bottom: 0;
   }
 }
+
+.legal-back .nav-chevron {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+@media (hover: hover) {
+  .legal-back:hover .nav-chevron {
+    transform: translateX(-3px);
+  }
+}
