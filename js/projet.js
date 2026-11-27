@@ -79,7 +79,75 @@ const projects = {
         { file: "interieur3.jpg", width: "855%", caption: "Vue interieur 3" },
         { file: "avant1.jpg", width: "75%", caption: "Travaux" },
       ]
-    }
+    },
+      augusta74: {
+      json: "augusta.json",
+      images: [
+        { file: "exterieur1.jpg", width: "70%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "exterieur5.jpg", width: "65%", caption: "Vue interieur 1" },
+        { file: "interieur1.jpg", width: "80%", caption: "Vue interieur 2" },
+      ]
+    },
+      evire74: {
+        json: "evire.json",
+        images: [
+          { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" },
+          { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+          { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+          { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+          { file: "exterieur5.jpg", width: "85%", caption: "Vue extérieure 5" },
+          { file: "exterieur6.jpg", width: "75%", caption: "Vue extérieure 6" },
+          { file: "exterieur7.jpg", width: "65%", caption: "Vue extérieure 7" },
+          { file: "exterieur8.jpg", width: "80%", caption: "Vue extérieure 8" },
+        ]
+    },
+      viuz74: {
+      json: "viuz.json",
+      images: [
+        { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "exterieur5.jpg", width: "85%", caption: "Vue extérieure 5" },
+        { file: "exterieur6.jpg", width: "75%", caption: "Vue extérieure 6" },
+      ]
+    },
+      combloux74: {
+      json: "combloux.json",
+      images: [
+        { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" }
+      ]
+    },
+      combloux74: {
+      json: "combloux.json",
+      images: [
+        { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" },
+        { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+        { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+        { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+        { file: "exterieur5.jpg", width: "85%", caption: "Vue extérieure 5" },
+        { file: "interieur1.jpg", width: "80%", caption: "Vue interieur 1" },
+        { file: "interieur2.jpg", width: "80%", caption: "Vue interieur 2" },
+      ]
+    },
+      vallinfier74: {
+      json: "vallinfier.json",
+      images: [
+          { file: "exterieur1.jpg", width: "85%", caption: "Vue extérieure 1" },
+          { file: "exterieur2.jpg", width: "80%", caption: "Vue extérieure 2" },
+          { file: "exterieur3.jpg", width: "60%", caption: "Vue extérieure 3" },
+          { file: "exterieur4.jpg", width: "75%", caption: "Vue extérieure 4" },
+          { file: "exterieur5.jpg", width: "85%", caption: "Vue extérieure 5" },
+          { file: "exterieur6.jpg", width: "75%", caption: "Vue extérieure 6" },
+          { file: "exterieur7.jpg", width: "65%", caption: "Vue extérieure 7" },
+          { file: "exterieur8.jpg", width: "80%", caption: "Vue extérieure 8" },
+          { file: "interieur1.jpg", width: "80%", caption: "Vue interieur 1" },
+          { file: "interieur2.jpg", width: "75%", caption: "Vue interieur 2" },
+      ]
+    },
 };
 
 async function loadProject() {
