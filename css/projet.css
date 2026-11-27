@@ -356,10 +356,6 @@ body.projects-page:has(.project-detail) {
 
     gap: 12px;
   }
-
-  .project-bottom-nav a {
-    font-size: 28px;
-  }
 }
 
 .project-back {
