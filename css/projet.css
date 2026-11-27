@@ -224,7 +224,7 @@ body.projects-page:has(.project-detail) {
 
 /* augmenter cette valeur pour afficher en gras les elements en gras dans le texte de base */
 .project-description strong {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 
