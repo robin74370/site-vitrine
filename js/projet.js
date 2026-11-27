@@ -111,7 +111,7 @@ async function loadProject() {
     document.getElementById("project-date").textContent =
       data.date || "";
 
-    document.getElementById("project-description").textContent =
+    document.getElementById("project-description").innerHTML =
       data.texte || "";
 
     const gallery = document.getElementById("project-gallery");
