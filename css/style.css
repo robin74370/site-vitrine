@@ -156,4 +156,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
     padding-bottom: 15px;
   }
 
+  .top-pattern-logo {
+    padding: 0;
+  }
 }
